@@ -6,15 +6,18 @@ import axios from "axios";
 import Header from "./components/header";
 import SearchBar from "./components/search_bar";
 import CompanyList from "./components/company_list";
+import CompanyDetail from "./components/company_detail";
+
+import { Grid, Container } from "semantic-ui-react";
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { companies: [] };
+    this.state = { companies: [], selectedCompany: null };
 
     axios.get("http://localhost:3000/companies").then(res => {
-      this.setState({ companies: res.data });
+      this.setState({ companies: res.data, selectedCompany: res.data[0] });
     });
   }
 
@@ -23,7 +26,14 @@ class App extends Component {
       <div>
         <Header />
         <SearchBar />
-        <CompanyList companies={this.state.companies} />
+        <Container>
+          <Grid stackable>
+            <Grid.Row>
+              <CompanyDetail company={this.state.selectedCompany} />
+              <CompanyList onCompanySelect={selectedCompany => this.setState({selectedCompany}) } companies={this.state.companies} />
+            </Grid.Row>
+          </Grid>
+        </Container>
       </div>
     );
   }
