@@ -69,7 +69,6 @@ const HomepageInfo = props => {
       </Container>
 
       <Grid columns={2} stackable className="advertisements">
-        <Grid.Row>
           <Grid.Column>
             <div className="userAd">
               <Header
@@ -102,7 +101,6 @@ const HomepageInfo = props => {
               </div>
             </div>
           </Grid.Column>
-        </Grid.Row>
       </Grid>
     </div>
   );

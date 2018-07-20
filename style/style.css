@@ -12,6 +12,10 @@
 }
 
 /* Navigation bar */
+.navMenu {
+    padding-top: 5px;
+}
+
 .navMenu .divider {
     margin-bottom: 0px !important
 }
@@ -31,12 +35,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding-top: 8% !important;
-    padding-bottom: 8% !important;
+    padding: 8% 0% !important;
 }
 
 .searchBar .segment {
-    padding: 3rem 1rem !important;
+    padding: 3rem 2rem !important;
 }
 
 /* Search bar end */
@@ -76,9 +79,10 @@
 /* Footer */
 
 .footer {
+    margin-top: 1%;
     padding-top: 1%;
     background-color: var(--blue);
-    color: var(--orange);
+    color: white;
     text-shadow: -1px -1px 1px #00485e, 1px -1px 1px #00485e, -1px 1px 1px #00485e, 1px 1px 1px #00485e;
     border-top: 1px solid #676768;
 }

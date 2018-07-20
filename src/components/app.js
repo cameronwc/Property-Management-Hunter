@@ -15,8 +15,8 @@ export default class App extends Component {
         <Header />
         <SearchBar />
         <HomepageInfo />
-        <CompanyList />
-        <CompanyDetail />
+        {/* <CompanyList />
+        <CompanyDetail /> */}
         <Footer />
       </div>
     );
