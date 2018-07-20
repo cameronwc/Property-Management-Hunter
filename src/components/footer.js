@@ -38,11 +38,20 @@ export default function Footer() {
             </List>
             <List horizontal>
                 <List.Item>
-                    <a href='https://github.com/cameronwc/Property-Management-Hunter'><Icon name='github'/></a>
+                <a href='https://github.com/cameronwc/Property-Management-Hunter'><Icon name='github'/></a>
+                <a href='https://twitter.com/c_w_cooper'><Icon name='twitter'/></a>
                 </List.Item>
             </List>
           </Grid.Column>
         </Grid>
+        <br />
+        <hr />
+        <br />
+        <div align='center'>
+            <p>Copyright <Icon name='copyright'/> 2018-2018</p>
+            <p>Property Management Hunter</p>
+            <p>All Rights Reserved</p>
+        </div>
       </Container>
     </div>
   );
