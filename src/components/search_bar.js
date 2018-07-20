@@ -5,7 +5,8 @@ import {
   Icon,
   Segment,
   Container,
-  Grid
+  Grid,
+  Header
 } from "semantic-ui-react";
 
 class SearchBar extends Component {
@@ -20,7 +21,7 @@ class SearchBar extends Component {
       <div className='searchBar'>
         <Container>
           <Segment>
-            <h1>Find a Property Management company for your Home</h1>
+            <Header as='h1' className='blue-custom'>Find a Property Management company for your <span className='orange'>Home</span></Header>
             <Grid columns={2} stackable>
               <Grid.Column>
                 <Input

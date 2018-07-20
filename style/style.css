@@ -1,8 +1,20 @@
 :root {
-    --blue-color: #006e90;
+    --orange: #f2711c;
+    --blue: #006e90;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.blue-custom {
+    color: var(--blue) !important;
 }
 
 /* Navigation bar */
+.navMenu .divider {
+    margin-bottom: 0px !important
+}
 
 .navMenu img {
     width: 300px;
@@ -12,13 +24,72 @@
 /* Navigation bar end */
 
 /* Search bar */
-
-.searchBar h1 {
-    color: var(--blue-color);
-}
-
 .searchBar {
     margin-bottom: 1%;
+    background-image: url('https://propertymanagementhunter.com/company-img/hero-background2.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8% !important;
+    padding-bottom: 8% !important;
+}
+
+.searchBar .segment {
+    padding: 3rem 1rem !important;
 }
 
 /* Search bar end */
+
+/* Adverts */
+.userAd, .companyAd {
+    padding-top: 100px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.userAd {
+    background-image: url('https://propertymanagementhunter.com/company-img/business-hands.png')
+}
+
+.companyAd {
+    background-image: url('https://propertymanagementhunter.com/company-img/business-agreement.jpg')
+}
+
+.userAd > h2, .companyAd > h2 {
+    color: white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.center-button-wrapper {
+    display: flex;
+    justify-content: center
+}
+
+.advertisements .column {
+    padding: 0px !important
+}
+
+/* Adverts end */
+
+/* Footer */
+
+.footer {
+    padding-top: 1%;
+    background-color: var(--blue);
+    color: var(--orange);
+    text-shadow: -1px -1px 1px #00485e, 1px -1px 1px #00485e, -1px 1px 1px #00485e, 1px 1px 1px #00485e;
+    border-top: 1px solid #676768;
+}
+
+.footer h3 {
+    color: white !important;
+}
+
+.footer .icon {
+    color: var(--orange);
+    font-size: 1.5em;
+}
+
+/* Footer end */
