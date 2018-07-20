@@ -1,1 +1,24 @@
+:root {
+    --blue-color: #006e90;
+}
 
+/* Navigation bar */
+
+.navMenu img {
+    width: 300px;
+    height: 60px;
+}
+
+/* Navigation bar end */
+
+/* Search bar */
+
+.searchBar h1 {
+    color: var(--blue-color);
+}
+
+.searchBar {
+    margin-bottom: 1%;
+}
+
+/* Search bar end */

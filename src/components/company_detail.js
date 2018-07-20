@@ -9,7 +9,7 @@ const CompanyDetail = ({company}) => {
 
     return (
         <Grid.Column width={10}>
-            <Image size='large' src='https://picsum.photos/300/200?random' />
+            <Image size='huge' src='https://picsum.photos/300/200?random' />
             {company.companyName}
         </Grid.Column>
     )

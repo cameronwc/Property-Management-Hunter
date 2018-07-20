@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import _ from "lodash";
 
 // Components
 import Header from "./components/header";
@@ -16,21 +17,32 @@ class App extends Component {
 
     this.state = { companies: [], selectedCompany: null };
 
+    this.companySearch("80917");
+  }
+
+  companySearch(term) {
     axios.get("http://localhost:3000/companies").then(res => {
       this.setState({ companies: res.data, selectedCompany: res.data[0] });
     });
   }
 
   render() {
+    const companySearch = _.debounce(term => { this.companySearch(term) }, 300);
+
     return (
       <div>
         <Header />
-        <SearchBar />
+        <SearchBar onSearchTermChange={companySearch} />
         <Container>
           <Grid stackable>
             <Grid.Row>
               <CompanyDetail company={this.state.selectedCompany} />
-              <CompanyList onCompanySelect={selectedCompany => this.setState({selectedCompany}) } companies={this.state.companies} />
+              <CompanyList
+                onCompanySelect={selectedCompany =>
+                  this.setState({ selectedCompany })
+                }
+                companies={this.state.companies}
+              />
             </Grid.Row>
           </Grid>
         </Container>
