@@ -1,5 +1,5 @@
 # Property Management Hunter
-A company I am making, this project uses the MERN stack for development.
+Property Management Hunter is a startup at https://propertymanagementhunter.com/. This repo is a React redesign of the website that is currently live.
 
 ### Getting Started
 
