@@ -11,6 +11,14 @@
     color: var(--blue) !important;
 }
 
+/* FIXES */
+
+.ui.secondary.menu {
+    margin-right: 0px !important;
+}
+
+/* END FIXES */
+
 /* Navigation bar */
 .navMenu {
     padding-top: 5px;
@@ -25,12 +33,26 @@
     height: 60px;
 }
 
+@media (max-width: 520px) {
+    .navMenu img {
+        width: 180px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .navMenu img {
+        display: none !important;
+    }
+}
+
 /* Navigation bar end */
 
 /* Search bar */
 .searchBar {
     margin-bottom: 1%;
-    background-image: url('https://propertymanagementhunter.com/company-img/hero-background2.png');
+    /* background-image: url('https://propertymanagementhunter.com/company-img/hero-background2.png'); */
+    background-image: url('/src/img/office.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,6 +92,10 @@
     justify-content: center
 }
 
+.advertisements {
+    margin-top: 1% !important;
+}
+
 .advertisements .column {
     padding: 0px !important
 }
@@ -79,8 +105,7 @@
 /* Footer */
 
 .footer {
-    margin-top: 1%;
-    padding-top: 1%;
+    padding-top: 2%;
     background-color: var(--blue);
     color: white;
     text-shadow: -1px -1px 1px #00485e, 1px -1px 1px #00485e, -1px 1px 1px #00485e, 1px 1px 1px #00485e;
