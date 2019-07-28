@@ -23,3 +23,11 @@ Open a new terminal
 
 Requirements:
 Node and Mongodb
+
+# License
+
+This repository is provided without a license meaning this work is under exclusive copyright, no one may copy, distribute, or modify the work without explicit permission.
+
+Copyright (c) 2018 Cameron Cooper 
+
+This software is sole property of Cameron Cooper.
